@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Армада vs Пірати: Червоно-Чорне Дерево</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1>Армада vs Пірати</h1>
+  <div id="controls">
+    <input id="pirateCount" type="number" placeholder="Кількість піратів" />
+    <button onclick="searchShip()">Атакувати</button>
+    <input id="groundCount" type="number" placeholder="Затонувший корабель" />
+    <button onclick="removeShip()">Вибути</button>
+    <button onclick="resetTree()">Скинути</button>
+  </div>
+  <div id="tree-container">
+    <svg id="tree-svg" width="1000" height="500"></svg>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+</html>

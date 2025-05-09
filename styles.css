@@ -1,0 +1,72 @@
+:root {
+    --bg-color: #1e1e2f;
+    --card-bg: #2a2a3d;
+    --text-color: #e0e0f0;
+    --accent-color: #5dd39e;
+    --node-red: #e06666;
+    --node-black: #4d4d5e;
+    --link-color: #6e6e8e;
+    --highlight: #82cfff;
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+  }
+  #controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  input, button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: var(--font);
+  }
+  input {
+    background: #3a3a50;
+    color: var(--text-color);
+    width: 140px;
+  }
+  input::placeholder {
+    color: #8888aa;
+  }
+  button {
+    background: var(--accent-color);
+    color: #1e1e2f;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  }
+  button:hover {
+    background: #42b382;
+  }
+  #tree-container {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  svg { background: var(--bg-color); }
+  .node { stroke: var(--text-color); }
+  .red { fill: var(--node-red); }
+  .black { fill: var(--node-black); }
+  .link { stroke: var(--link-color); stroke-width: 2px; }
+  .highlight { stroke: var(--highlight); stroke-width: 4px; }
